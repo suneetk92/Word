@@ -18,49 +18,49 @@
   <ion-tabs #mainTabs tabsHighlight="true" preloadTabs="true" dark>
     <ion-slides #mainSlider (ionDidChange)="onSlideChanged()" pager>
       <ion-slide>
-        <ion-tab [root]="home" tabTitle="Home" (ionSelect)="onSelectionChanged(0)" width-33></ion-tab>
+        <ion-tab [root]="home" tabTitle="Home" (ionSelect)="onSelectionChanged(0)" [show]="pageShow[0]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="twoLetterWords" tabTitle="2 Letter Words" (ionSelect)="onSelectionChanged(1)" width-33></ion-tab>
+        <ion-tab [root]="twoLetterWords" tabTitle="2 Letter Words" (ionSelect)="onSelectionChanged(1)" [show]="pageShow[1]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="threeLetterWords" tabTitle="3 Letter Words" (ionSelect)="onSelectionChanged(2)" width-33></ion-tab>
+        <ion-tab [root]="threeLetterWords" tabTitle="3 Letter Words" (ionSelect)="onSelectionChanged(2)" [show]="pageShow[2]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="fourLetterWords" tabTitle="4 Letter Words" (ionSelect)="onSelectionChanged(3)" width-33></ion-tab>
+        <ion-tab [root]="fourLetterWords" tabTitle="4 Letter Words" (ionSelect)="onSelectionChanged(3)" [show]="pageShow[3]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="fiveLetterWords" tabTitle="5 Letter Words" (ionSelect)="onSelectionChanged(4)" width-33></ion-tab>
+        <ion-tab [root]="fiveLetterWords" tabTitle="5 Letter Words" (ionSelect)="onSelectionChanged(4)" [show]="pageShow[4]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="sixLetterWords" tabTitle="6 Letter Words" (ionSelect)="onSelectionChanged(5)" width-33></ion-tab>
+        <ion-tab [root]="sixLetterWords" tabTitle="6 Letter Words" (ionSelect)="onSelectionChanged(5)" [show]="pageShow[5]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="sevenLetterWords" tabTitle="7 Letter Words" (ionSelect)="onSelectionChanged(6)" width-33></ion-tab>
+        <ion-tab [root]="sevenLetterWords" tabTitle="7 Letter Words" (ionSelect)="onSelectionChanged(6)" [show]="pageShow[6]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="eightLetterWords" tabTitle="8 Letter Words" (ionSelect)="onSelectionChanged(7)" width-33></ion-tab>
+        <ion-tab [root]="eightLetterWords" tabTitle="8 Letter Words" (ionSelect)="onSelectionChanged(7)" [show]="pageShow[7]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="nineLetterWords" tabTitle="9 Letter Words" (ionSelect)="onSelectionChanged(8)" width-33></ion-tab>
+        <ion-tab [root]="nineLetterWords" tabTitle="9 Letter Words" (ionSelect)="onSelectionChanged(8)" [show]="pageShow[8]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="tenLetterWords" tabTitle="10 Letter Words" (ionSelect)="onSelectionChanged(9)" width-33></ion-tab>
+        <ion-tab [root]="tenLetterWords" tabTitle="10 Letter Words" (ionSelect)="onSelectionChanged(9)" [show]="pageShow[9]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="elevenLetterWords" tabTitle="11 Letter Words" (ionSelect)="onSelectionChanged(10)" width-33></ion-tab>
+        <ion-tab [root]="elevenLetterWords" tabTitle="11 Letter Words" (ionSelect)="onSelectionChanged(10)" [show]="pageShow[10]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="twelveLetterWords" tabTitle="12 Letter Words" (ionSelect)="onSelectionChanged(11)" width-33></ion-tab>
+        <ion-tab [root]="twelveLetterWords" tabTitle="12 Letter Words" (ionSelect)="onSelectionChanged(11)" [show]="pageShow[11]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="thirteenLetterWords" tabTitle="13 Letter Words" (ionSelect)="onSelectionChanged(12)" width-33></ion-tab>
+        <ion-tab [root]="thirteenLetterWords" tabTitle="13 Letter Words" (ionSelect)="onSelectionChanged(12)" [show]="pageShow[12]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="fourteenLetterWords" tabTitle="14 Letter Words" (ionSelect)="onSelectionChanged(13)" width-33></ion-tab>
+        <ion-tab [root]="fourteenLetterWords" tabTitle="14 Letter Words" (ionSelect)="onSelectionChanged(13)" [show]="pageShow[13]"></ion-tab>
       </ion-slide>
       <ion-slide>
-        <ion-tab [root]="fifteenLetterWords" tabTitle="15 Letter Words" (ionSelect)="onSelectionChanged(14)" width-33></ion-tab>
+        <ion-tab [root]="fifteenLetterWords" tabTitle="15 Letter Words" (ionSelect)="onSelectionChanged(14)" [show]="pageShow[14]"></ion-tab>
       </ion-slide>
     </ion-slides>
   </ion-tabs>

@@ -44,6 +44,7 @@ export class TabsPage {
   private thirteenLetterWords: any;
   private fourteenLetterWords: any;
   private fifteenLetterWords: any;
+  private pageShow: boolean[];
 
   constructor() {
     this.home = HomePage;
@@ -61,6 +62,7 @@ export class TabsPage {
     this.thirteenLetterWords = ThirteenLetterWordsPage;
     this.fourteenLetterWords = FourteenLetterWordsPage;
     this.fifteenLetterWords = FifteenLetterWordsPage;
+    this.pageShow = [true, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
   }
 
   ionViewDidEnter() {
@@ -78,6 +80,18 @@ export class TabsPage {
     console.log("Current tab index is", currentIndex);
     console.log("Current slider index is", this.slider.getActiveIndex());
     this.slider.slideTo(currentIndex);
+    if(currentIndex >= 1 && currentIndex <= 13){
+      for(var i = 0; i < 15; ++i){
+        this.pageShow[i] = !!(i == currentIndex || i == currentIndex + 1 || i == currentIndex - 1);
+      }
+    }else if(currentIndex == 0){
+      for(var i = 0; i < 15; ++i){
+        this.pageShow[i] = i == currentIndex;
+      }
+    }else{
+      for(var i = 0; i < 15; ++i){
+        this.pageShow[i] = !!(i == currentIndex || i == currentIndex - 1 || i == currentIndex - 2);
+      }
+    }
   }
-
 }
