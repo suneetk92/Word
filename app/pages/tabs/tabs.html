@@ -1,0 +1,67 @@
+<!--
+  Generated template for the TabsPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar dark>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tabs</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-tabs #mainTabs tabsHighlight="true" preloadTabs="true" dark>
+    <ion-slides #mainSlider (ionDidChange)="onSlideChanged()" pager>
+      <ion-slide>
+        <ion-tab [root]="home" tabTitle="Home" (ionSelect)="onSelectionChanged(0)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="twoLetterWords" tabTitle="2 Letter Words" (ionSelect)="onSelectionChanged(1)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="threeLetterWords" tabTitle="3 Letter Words" (ionSelect)="onSelectionChanged(2)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="fourLetterWords" tabTitle="4 Letter Words" (ionSelect)="onSelectionChanged(3)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="fiveLetterWords" tabTitle="5 Letter Words" (ionSelect)="onSelectionChanged(4)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="sixLetterWords" tabTitle="6 Letter Words" (ionSelect)="onSelectionChanged(5)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="sevenLetterWords" tabTitle="7 Letter Words" (ionSelect)="onSelectionChanged(6)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="eightLetterWords" tabTitle="8 Letter Words" (ionSelect)="onSelectionChanged(7)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="nineLetterWords" tabTitle="9 Letter Words" (ionSelect)="onSelectionChanged(8)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="tenLetterWords" tabTitle="10 Letter Words" (ionSelect)="onSelectionChanged(9)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="elevenLetterWords" tabTitle="11 Letter Words" (ionSelect)="onSelectionChanged(10)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="twelveLetterWords" tabTitle="12 Letter Words" (ionSelect)="onSelectionChanged(11)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="thirteenLetterWords" tabTitle="13 Letter Words" (ionSelect)="onSelectionChanged(12)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="fourteenLetterWords" tabTitle="14 Letter Words" (ionSelect)="onSelectionChanged(13)" width-33></ion-tab>
+      </ion-slide>
+      <ion-slide>
+        <ion-tab [root]="fifteenLetterWords" tabTitle="15 Letter Words" (ionSelect)="onSelectionChanged(14)" width-33></ion-tab>
+      </ion-slide>
+    </ion-slides>
+  </ion-tabs>
+</ion-content>
